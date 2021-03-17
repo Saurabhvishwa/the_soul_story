@@ -1,0 +1,33 @@
+<%- include ("./partials/header"); %>
+  <div class="jumbotron thought">
+    <div class="container-fluid">
+        <h1 class="display-4 text-center font-weight-bold"><%=data.title%></h1>
+        <% if(success_msg != ''){ %>
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+              <%= success_msg %>
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <% } %>
+        <hr class="my-4">
+        <div class="container-fluid thoughtBody">
+            <p class="lead font-weight-light">
+                <%=data.body%>
+            </p>
+        </div>
+        <hr class="my-4">
+        <div class="container-fluid thoughtManage">
+            <p class="lead">
+                <a type="button" id="newThought" class="btn btn-outline-primary btn-lg" href="/dashboard/show" role="button">Back</a>
+            </p>
+            <p class="lead">
+                <a type="button" id="newThought" class="btn btn-outline-primary btn-lg" href="/thought/edit/<%=data._id%>" role="button">Edit</a>
+            </p>
+            <p class="lead">
+                <a type="button" id="newThought" class="btn btn-outline-primary btn-lg" href="/thought/delete/<%=data._id%>" role="button">Delete</a>
+            </p>
+        </div>
+        
+    </div>
+</div>

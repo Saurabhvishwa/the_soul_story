@@ -1,0 +1,30 @@
+<%- include ("./partials/header"); %>
+  <div class="jumbotron dashboard-new">
+      <div class="container-fluid">
+          <form method="POST" action="http://localhost:3000/thought/update/<%=data._id%>" id="newForm" onsubmit="return onSubmit()">
+                <div class="container">
+                    <label for="title">Title</label>
+                <input type="title" class="form-control" name="title" id="title" value="<%=data.title%>" aria-describedby="title" readonly>
+                </div>
+                <hr class="my-4">
+                <div class="container">
+                    <label for="body">Body</label>
+                    <textarea class="form-control" name="body" id="body" rows="3"></textarea>
+                </div>
+                <div class="container-fluid">
+                    <p class="lead">
+                        <a type="button" id="newThought" class="btn btn-outline-primary btn-lg" onclick="history.back()" role="button">Back</a>
+                    </p>
+                    <p class="lead">
+                        <button type="submit" class="btn btn-outline-primary btn-lg">Update</button>
+                    </p>
+                </div>
+                
+          </form>
+      </div>
+  </div>
+  <script>
+      var t = document.getElementById("body");
+      var body = `<%=data.body%>`;
+      t.value = body;
+  </script>

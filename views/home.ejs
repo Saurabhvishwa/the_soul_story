@@ -1,0 +1,23 @@
+<%- include ("./partials/header"); %>
+<div class="jumbotron">
+  <h1 class="display-4 text-center">Welcome in the Soul's World</h1>
+  <% if(success_msg != ''){ %>
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+      <%= success_msg %>
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <% } %>
+  <hr class="my-4">
+  <p class="lead text-center">T<em>he Soul Server</em> is a simple demo website to keep your thoughts preserved.<br/>If you have any thought, can write here and we will keep it safe for you as long as you want.</p>
+  <p class="lead text-center">
+    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+  </p>
+</div>
+<div class="jumbotron">
+  <p class="lead text-center">Add, Edit or Remove your thoughts</p>
+  <p class="lead text-center">
+    <a class="btn btn-outline-primary btn-lg" href="/dashboard" role="button">Dashboard</a>
+  </p>
+</div>

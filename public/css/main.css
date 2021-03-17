@@ -1,0 +1,146 @@
+/* *{
+    font-family: 'Quicksand', sans-serif!important;
+} */
+::-webkit-scrollbar{
+    width: 5px;
+    background-color: grey;
+    border-radius: 2.5px;
+    display: none;
+}
+/* ::-webkit-scrollbar-thumb{
+    background-color:#fff;
+    width: 5px;
+    border-radius: 2.5px;
+} */
+a{
+    text-decoration: none!important;
+}
+.h4{
+    padding: 1.2rem;
+    margin-bottom: 0;
+}
+.jumbotron{
+    padding:1rem 2rem;
+}
+
+.jumbotron .home , .dashboard-new .container-fluid .container-fluid{
+    display: flex;
+    justify-content: space-between;
+}
+.dropdown > .dropdown-menu{
+    min-width: auto;
+}
+
+.dashboard .container-fluid{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.btn{
+        min-width:10rem;
+}
+
+.dashboard-new .container-fluid form{
+    width:inherit;
+}
+
+.dashboard-new h2{
+    margin-bottom: 2rem;
+}
+
+.dashboard-new .container-fluid form .container{
+    display:flex;
+    margin-bottom: 2rem;
+}
+.dashboard-new .container-fluid form .container label{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    margin-right: 2rem;
+    font-weight: bold;
+}
+.show .thoughtList{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.show .thoughtList{
+    margin-bottom: 2rem;
+}
+.show .container-fluid a:hover{
+    color:#000; 
+}
+.thought .thoughtManage{
+    display:flex;
+    justify-content: space-between;
+}
+.thought .thoughtBody{
+    max-height:20rem;
+    overflow-y:scroll;
+    box-shadow: 0 0 5px gray;
+    border-radius: 5px;
+    padding: 1rem;
+}
+@media (max-width: 992px) {
+    .h4{
+        font-size: 1.2rem;
+        padding:0.6rem;
+    }
+    .jumbotron{
+        padding:1.5rem 1rem;
+        margin-bottom: 0.8rem;
+    }
+    .dashboard{
+        padding: 1.5rem 0.6rem;
+    }
+    h1{
+        font-size:1.2rem;
+    }
+    h4{
+        font-size: 1rem;
+    }
+    .display-3{
+        font-size: 2.5rem;
+    }
+    .display-4{
+        font-size: 1.5rem;
+    }
+    .lead{
+        font-size: 0.8rem;
+    }
+    .btn, a{
+        font-size: 0.7rem;
+    }
+    .container{
+        max-width: none;
+        padding:0;
+    }
+    .btn{
+        width:5rem;
+        padding:0.2rem 1rem;
+    }
+    .container-fluid{
+        padding:0;
+    }
+    .dashboard-new .container-fluid form .container label{
+        margin-right: 1rem;
+    }
+    .thought .thoughtBody{
+        box-shadow: 0 0 5px gray;
+        border-radius: 2.5px;
+        padding: 0.5rem;
+    }
+    ::-webkit-scrollbar{
+        width: 2.5px;
+        background-color: grey;
+        border-radius: 1.25px;
+        display: none;
+    }
+    /* ::-webkit-scrollbar-thumb{
+        background-color:#fff;
+        width: 2.5px;
+        border-radius: 1.25px;
+    } */
+}
